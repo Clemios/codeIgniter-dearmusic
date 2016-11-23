@@ -71,6 +71,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<h1>Welcome to CodeIgniter!</h1>
 
 	<div id="body">
+	<?php foreach ($bonjour as $row) : ?>
+                            <div class="timeline-event">
+                                    <h2><?php echo $row->Id; ?></h2>
+                                    <h5><?php echo $row->nom; ?></h5>
+                                </div>
+    <?php endforeach; ?>
 		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
 		<p>If you would like to edit this page you'll find it located at:</p>
