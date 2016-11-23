@@ -74,7 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<?php foreach ($bonjour as $row) : ?>
                             <div class="timeline-event">
                                     <h2><?php echo $row->Id; ?></h2>
-                                    <h5><?php echo $row->nom; ?></h5>
+                                    <h5><?php echo $row->Name; ?></h5>
                                 </div>
     <?php endforeach; ?>
 		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
@@ -86,6 +86,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<code>application/controllers/Welcome.php</code>
 
 		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
+
+		<p>If you want to create an new account click <a href="newAccount.html">here</a>.</p>
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
