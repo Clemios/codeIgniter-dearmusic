@@ -190,10 +190,5 @@
         <script src="<?= constant('ASSETS') ?>js/lightbox.min.js"></script>
         <script src="<?= constant('ASSETS') ?>js/jquery.countdown.min.js"></script>
         <script src="<?= constant('ASSETS') ?>js/scripts.js"></script>
-
-
-
-<script type="text/javascript" src="<?php echo base_url("<?= constant('ASSETS') ?>js/jquery-1.10.2.js"); ?>"></script>
-<script type="text/javascript" src="<?php echo base_url("<?= constant('ASSETS') ?>js/bootstrap.js"); ?>"></script>
 </body>
 </html>

@@ -155,16 +155,6 @@
 
 
 
-
-
-
-
-
-
-
-
-<script type="text/javascript" src="<?php echo base_url("assets/js/jquery-1.10.2.js"); ?>"></script>
-<script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>"></script>
 		<script src="https://www.youtube.com/iframe_api"></script>
 		<script src="<?= constant('ASSETS') ?>js/jquery.min.js"></script>
         <script src="<?= constant('ASSETS') ?>js/jquery.plugin.min.js"></script>
