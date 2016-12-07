@@ -16,7 +16,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="<?php echo base_url(); ?>index.php/home">KODING MADE SIMPLE</a>
+			<a class="navbar-brand" href="<?php echo base_url(); ?>">KODING MADE SIMPLE</a>
 		</div>
 		<div class="collapse navbar-collapse" id="navbar1">
 			<ul class="nav navbar-nav navbar-right">
@@ -24,7 +24,7 @@
 				<li><p class="navbar-text">Hello <?php echo $this->session->userdata('uname'); ?></p></li>
 				<li><a href="<?php echo base_url(); ?>home/logout">Log Out</a></li>
 				<?php } else { ?>
-				<li><a href="<?php echo base_url(); ?>ilogin">Login</a></li>
+				<li><a href="<?php echo base_url(); ?>login">Login</a></li>
 				<li><a href="<?php echo base_url(); ?>signup">Signup</a></li>
 				<?php } ?>
 			</ul>
