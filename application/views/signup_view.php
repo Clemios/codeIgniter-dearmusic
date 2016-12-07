@@ -84,7 +84,7 @@
 			<div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
 				<h1>Créer un compte ☺</h1>
 			</div>
-				<div class="col-md-4 col-md-offset-4 well">
+				<div class="col-md-4 col-md-offset-4 well signupformelement">
 					<?php $attributes = array("name" => "signupform");
 					echo form_open("signup/index", $attributes);?>
 					<legend>Signup page</legend>
