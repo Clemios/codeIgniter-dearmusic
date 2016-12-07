@@ -58,17 +58,18 @@
 	<div class="container">
 
 			<header class="row">
-				<div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
-					<h1>Créer un compte ☺</h1>
+				<div class="col-md-12 col-sm-12 text-center">
+					<h1 class="signupTitle">Créer un compte ☺</h1>
 				</div>
+
 			</header>
 
 
-			<content>
-				<div class="col-md-4 col-md-offset-4 well signupformelement">
+			<content class="row">
+				<div class="col-md-10 col-md-offset-1 well signupformelement">
 					<?php $attributes = array("name" => "signupform");
 					echo form_open("signup/index", $attributes);?>
-					<legend>Signup page</legend>
+					<legend><i class="fa fa-address-card-o" aria-hidden="true"></i> Signup page</legend>
 
 					<div class="photo-form-wrapper clearfix">
 						<div class="col-md-4 col-sm-4">
