@@ -106,20 +106,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link href="assets/css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="assets/css/line-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="assets/css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="assets/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="assets/css/theme-zest.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="assets/css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="../assets/css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="../assets/css/line-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="../assets/css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="../assets/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="../assets/css/theme-zest.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="../assets/css/custom.css" rel="stylesheet" type="text/css" media="all"/>
         <!--[if gte IE 9]>
         	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
 		<![endif]-->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
-        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="../js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <link href="http://fonts.googleapis.com/css?family=Cardo:400,400italic" rel="stylesheet" type="text/css">
-        <link href="assets/css/font-cardo.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/font-cardo.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
@@ -199,21 +199,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 				
 		<script src="https://www.youtube.com/iframe_api"></script>
-		<script src="assets/js/jquery.min.js"></script>
+		<script src="dearmusic.com/assets/js/jquery.min.js"></script>
 		<script src="https://www.youtube.com/iframe_api"></script>
-		<script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.plugin.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.flexslider-min.js"></script>
-        <script src="assets/js/smooth-scroll.min.js"></script>
-        <script src="assets/js/skrollr.min.js"></script>
-        <script src="assets/js/spectragram.min.js"></script>
-        <script src="assets/js/scrollReveal.min.js"></script>
-        <script src="assets/js/isotope.min.js"></script>
-        <script src="assets/js/twitterFetcher_v10_min.js"></script>
-        <script src="assets/js/lightbox.min.js"></script>
-        <script src="assets/js/jquery.countdown.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
+		<script src="dearmusic.com/assets/js/jquery.min.js"></script>
+        <script src="dearmusic.com/assets/js/jquery.plugin.min.js"></script>
+        <script src="dearmusic.com/assets/js/bootstrap.min.js"></script>
+        <script src="dearmusic.com/assets/js/jquery.flexslider-min.js"></script>
+        <script src="dearmusic.com/assets/js/smooth-scroll.min.js"></script>
+        <script src="dearmusic.com/assets/js/skrollr.min.js"></script>
+        <script src="dearmusic.com/assets/js/spectragram.min.js"></script>
+        <script src="dearmusic.com/assets/js/scrollReveal.min.js"></script>
+        <script src="dearmusic.com/assets/js/isotope.min.js"></script>
+        <script src="dearmusic.com/assets/js/twitterFetcher_v10_min.js"></script>
+        <script src="dearmusic.com/assets/js/lightbox.min.js"></script>
+        <script src="dearmusic.com/assets/js/jquery.countdown.min.js"></script>
+        <script src="dearmusic.com/assets/js/scripts.js"></script>
     </body>
 </html>
 				
