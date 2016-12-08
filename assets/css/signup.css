@@ -1,0 +1,41 @@
+.form-control{
+	height: 80px;
+}
+
+body{
+	background: url("http://localhost/dearmusic.com/assets/img/304141.jpg") center center;
+
+}
+.signupTitle{
+	color:white;
+	font-size: 60px;
+}
+.photo-form-wrapper{
+	margin-bottom: 10px;
+}
+
+.btn-info{
+	    background-color: #32535d;
+}
+/*Background du content*/
+.signupformelement {
+
+
+    background: rgba(50,50,50,.7);
+}
+/* background des champs du formulaire*/
+input{
+	    background: rgba(255, 255, 255, 1)!important;
+	    color : #000 !important;
+}
+/* Couleur placeholder*/
+input::-webkit-input-placeholder { 
+    color: #cf5f51!important;
+}
+/* Couleur du nom des champs*/
+label{
+	color : white;
+}
+legend{
+	color : white;
+}
