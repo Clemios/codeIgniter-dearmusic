@@ -31,7 +31,7 @@ class login extends CI_Controller
 			if (count($uresult) > 0)
 			{
 				// set session
-				$sess_data = array('login' => TRUE, 'uname' => $uresult[0]->fname, 'uid' => $uresult[0]->id);
+				$sess_data = array('login' => TRUE, 'uname' => $uresult[0]->FirstName, 'uid' => $uresult[0]->Id);
 				$this->session->set_userdata($sess_data);
 				redirect("profile/index");
 			}

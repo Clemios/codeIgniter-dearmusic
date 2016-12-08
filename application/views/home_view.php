@@ -39,7 +39,7 @@
 		<div class="collapse navbar-collapse" id="navbar1">
 			<ul class="nav navbar-nav navbar-right">
 				<?php if ($this->session->userdata('login')){ ?>
-				<li><p class="navbar-text">Hello miskine <?php echo $this->session->userdata('uname'); ?></p></li>
+				<li><p class="navbar-text">Hello <?php echo $this->session->userdata('uname'); ?></p></li>
 				<li><a href="<?php echo base_url(); ?>home/logout">Log Out</a></li>
 				<?php } else { ?>
 				<li><a href="<?php echo base_url(); ?>login">Login</a></li>
