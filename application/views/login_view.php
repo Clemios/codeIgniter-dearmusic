@@ -3,8 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>User Login Form | KodingMadeSimple.com</title>
+	<title>Login page</title>
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>">
+	<link href="<?= constant('ASSETS') ?>css/login_view.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
 </head>
 <body>
 <nav class="navbar navbar-default" role="navigation">
@@ -16,7 +19,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="<?php echo base_url(); ?>">DEAR MUSIC MAMENE</a>
+			<a class="navbar-brand" href="<?php echo base_url(); ?>">DEAR MUSIC</a>
 		</div>
 		<div class="collapse navbar-collapse" id="navbar1">
 			<ul class="nav navbar-nav navbar-right">
@@ -34,7 +37,7 @@
 <br/>
 <div class="container">
 	<div class="row">
-		<div class="col-md-4 col-md-offset-4 well">
+		<div class="col-md-4 col-md-offset-4 well Signupformelement">
 		<?php $attributes = array("name" => "loginform");
 			echo form_open("login/index", $attributes);?>
 			<legend>Login</legend>
@@ -57,7 +60,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-4 col-md-offset-4 text-center">	
+		<div class="col-md-4 col-md-offset-4 text-center well foote">	
 		New User? <a href="<?php echo base_url(); ?>index.php/signup">Sign Up Here</a>
 		</div>
 	</div>

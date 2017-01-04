@@ -11,7 +11,7 @@
 	<link href="<?= constant('ASSETS') ?>css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
 	<link href="<?= constant('ASSETS') ?>css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
 	<link href="<?= constant('ASSETS') ?>css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
-	<link href="<?= constant('ASSETS') ?>css/theme-cobalt.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="<?= constant('ASSETS') ?>css/theme-sunset.css" rel="stylesheet" type="text/css" media="all"/>
 	<link href="<?= constant('ASSETS') ?>css/custom.css" rel="stylesheet" type="text/css" media="all"/>
 	<link href="<?= constant('ASSETS') ?>css/signup.css" rel="stylesheet" type="text/css" media="all"/>
         <!--[if gte IE 9]>
@@ -21,6 +21,26 @@
     <script src="<?= constant('ASSETS') ?>js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic" rel="stylesheet" type="text/css">
     <link href="<?= constant('ASSETS') ?>css/font-libre.css" rel="stylesheet" type="text/css">
+    
+
+
+
+
+
+	<link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
 </head>
 <body>
 	<nav class="navbar navbar-default" role="navigation">
@@ -32,7 +52,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="<?php echo base_url(); ?>">DEAR MUSIC MAMENE</a>
+				<a class="navbar-brand" href="<?php echo base_url(); ?>">DEAR MUSIC</a>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar1">
 				<ul class="nav navbar-nav navbar-right">
@@ -58,8 +78,9 @@
 	<div class="container">
 
 			<header class="row">
-				<div class="col-md-12 col-sm-12 text-center">
-					<h1 class="signupTitle">Créer un compte ☺</h1>
+				<div class="col-md-12 col-sm-12 ">
+					<h1 class="signupTitle">Create an </h1>
+					<h1 class="signupTitle">account </h1>
 				</div>
 
 			</header>
@@ -118,7 +139,7 @@
 							<span class="text-danger"><?php echo form_error('cPassword'); ?></span>
 						</div>
 
-						<div class="col-md-4 col-sm-4">
+						<div class="col-md-4 col-sm-4"">
 							<button name="submit" type="submit" class="btn btn-info">Signup</button>
 							<button name="cancel" type="reset" class="btn btn-info">Cancel</button>
 						</div>

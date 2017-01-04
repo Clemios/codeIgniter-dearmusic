@@ -1,14 +1,20 @@
 .form-control{
-	height: 80px;
+	height: 70px;
 }
 
 body{
-	background: url("http://localhost/dearmusic.com/assets/img/304141.jpg") center center;
-
+	background: url("http://localhost/dearmusic.com/assets/img/trance.jpg");
+	background-size: cover;
+	margin: 0;
 }
 .signupTitle{
-	color:white;
-	font-size: 60px;
+	margin-top: 37px;
+	color: #6d1d00;
+	font-size: 120px;
+	font-family: 'Satisfy';
+	margin-left: 100px;
+	font-style:	bold;
+
 }
 .photo-form-wrapper{
 	margin-bottom: 10px;
@@ -17,15 +23,15 @@ body{
 .btn-info{
 	    background-color: #32535d;
 }
+
 /*Background du content*/
 .signupformelement {
-
-
     background: rgba(50,50,50,.7);
 }
+
 /* background des champs du formulaire*/
 input{
-	    background: rgba(255, 255, 255, 1)!important;
+	    background: rgba(255, 255, 242, 1)!important;
 	    color : #000 !important;
 }
 /* Couleur placeholder*/
@@ -34,8 +40,44 @@ input::-webkit-input-placeholder {
 }
 /* Couleur du nom des champs*/
 label{
-	color : white;
+	color : rgba(255,255,242,1);
+	font-family: 'Comic Sans MS';
 }
 legend{
-	color : white;
+	color : #fcfcf2;
+	font-family: 'Yellowtail';
+	font-size: 40px;
 }
+
+footer{
+	color: #fcfcf2;
+}
+
+
+.btn-info{
+	border-color: #f77e5a; 
+	background: rgba(255,255,255,0);
+}
+.collapse{
+	background: rgba(50,50,50,1);
+}
+
+.navbar-default{
+	background: rgba(50,50,50,1);
+	border-color: #f77e5a;
+	color:white;
+
+}
+.navbar-brand{
+	font-family: 'Shadows Into Light';
+	color : white!important;
+	font-size: 25px;
+}
+
+.navbar-right{
+	font-family: 'Comic Sans MS';
+	font-size: 15px;
+	color : white!important;
+}
+
+

@@ -1,3 +1,10 @@
 .signupformelement{
 	z-index: 2;
 }
+
+.navbar-default{
+	background: rgba(50,50,50,1);
+	border-color: #f77e5a;
+	color:white;
+
+}
