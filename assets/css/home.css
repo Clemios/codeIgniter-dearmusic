@@ -1,0 +1,9 @@
+body{
+	background: url("http://localhost/dearmusic.com/assets/img/trance.jpg");
+	background-size: cover;
+	margin: 0;
+}
+
+{
+	background: rgba(0,0,0,0);
+}
