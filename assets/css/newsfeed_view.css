@@ -1,0 +1,72 @@
+.navbar-default{
+	background: rgba(50,50,50,1);
+	border-color: #3bd20a;
+	color:white;
+
+}
+
+.navbar-brand{
+	font-family: 'Shadows Into Light';
+	color : white!important;
+	font-size: 25px;
+}
+.unlien{
+	color: white!important;
+	font-family:  'Shadows Into Light';
+	font-size: 22px;
+}
+.signuplogin{
+	font-family: 'Shadows Into Light';
+	font-size: 20px;
+}
+body{
+	background: url('http://localhost/dearmusic.com/assets/img/chep.jpg');
+	background-size: cover;
+	margin: 0;
+}
+
+.Signupformelement{
+	    background: rgba(50,50,50,0.7);
+	    margin-top: 200px;
+	    border-color: #3bd20a;
+}
+
+label{
+	color : rgba(255,255,242,1);
+	font-family: 'Comic Sans MS';
+}
+
+legend{
+	color : #fcfcf2;
+	font-family: 'Shadows Into Light';
+	font-size: 50px;
+}
+
+.btn{
+	background: rgba(50,50,50,0.7);
+	border-color: #3bd20a;
+
+}
+.foote{
+	background: rgba(50,50,50,0.7);
+	border-color: #3bd20a;
+	color: white!important;
+}
+
+a:visited {
+  color: #3bd20a;
+}
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: rgba(50,50,50,0.7);
+  background: #3bd20a;
+}
+/* Couleur placeholder*/
+input::-webkit-input-placeholder { 
+    color: #62de60!important;
+}
+
+h6{
+	color: white;
+	font-size: 150px;
+}

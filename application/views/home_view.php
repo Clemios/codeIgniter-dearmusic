@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Page d'accueil| DearMusic.com</title>
 	<!--link the bootstrap css file-->
+	
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +15,6 @@
         <link href="<?= constant('ASSETS') ?>css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="<?= constant('ASSETS') ?>css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="<?= constant('ASSETS') ?>css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="<?= constant('ASSETS') ?>css/theme-sunset.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="<?= constant('ASSETS') ?>css/custom.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="<?= constant('ASSETS') ?>css/home.css" rel="stylesheet" type="text/css" media="all"/>
         <!--[if gte IE 9]>
@@ -24,129 +24,82 @@
         <script src="<?= constant('ASSETS') ?>js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <link href="http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic" rel="stylesheet" type="text/css">
         <link href="<?= constant('ASSETS') ?>css/font-libre.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-default" role="navigation">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="<?php echo base_url(); ?>">DEAR MUSIC MAMENE</a>
-		</div>
-		<div class="collapse navbar-collapse" id="navbar1">
-			<ul class="nav navbar-nav navbar-right">
-				<?php if ($this->session->userdata('login')){ ?>
-				<li><p class="navbar-text">Hello miskine <?php echo $this->session->userdata('uname'); ?></p></li>
-				<li><a href="<?php echo base_url(); ?>home/logout">Log Out</a></li>
-				<?php } else { ?>
-				<li><a href="<?php echo base_url(); ?>login">Login</a></li>
-				<li><a href="<?php echo base_url(); ?>signup">Signup</a></li>
-				<?php } ?>
-			</ul>
+	<?php 
+		include('application/views/menu.php');
+	?>
+    <div class="loader">
+    	<div class="spinner">
+		  <div class="double-bounce1"></div>
+		  <div class="double-bounce2"></div>
 		</div>
 	</div>
-</nav>
-
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
- <!--<![endif]-->
-
-    	<div class="loader">
-    		<div class="spinner">
-			  <div class="double-bounce1"></div>
-			  <div class="double-bounce2"></div>
+	<div class="nav-container">	
+	</div>
+	<section class="duplicatable-content milestones">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+					<h1 class="cochon">Dear Music, what is this ?</h1>
+					<p class="lead">
+						With Dear Music, you can :</p>	
+				</div>
 			</div>
-    	</div>
-				
-		<div class="nav-container">
-			
-		
-			
-		
-						
-			
-		
-			
-		
-	
-						
-						
-					</div>	
-			</header>
-			
-			<section class="duplicatable-content milestones">
-			
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-							<h1>Dear Music, what is this ?</h1>
-							<p class="lead">
-								With Dear Music, you can :</p>	
-						</div>
-					</div>
-		
-					<div class="row">
-						<div class="col-md-3 col-sm-6 text-center">
-							<div class="feature feature-icon-large">
-								<i class="icon icon-upload"></i>
-								<div class="pin-body"></div>
-								<div class="pin-head"></div>
-								<h5>Upload and Share <br>your Music</h5>
-								<span> </span>
-								<span class="sub"> </span>
-							</div>
-						</div>
-						
-						<div class="col-md-3 col-sm-6 text-center">
-							<div class="feature feature-icon-large">
-								<i class="icon icon-adjustments"></i>
-								<div class="pin-body"></div>
-								<div class="pin-head"></div>
-								<h5>Listen Music of&nbsp;<br>every users</h5>
-								<span> </span>
-								<span class="sub"> </span>
-							</div>
-						</div>
-						
-						<div class="col-md-3 col-sm-6 text-center">
-							<div class="feature feature-icon-large">
-								<i class="icon icon-ribbon"></i>
-								<div class="pin-body"></div>
-								<div class="pin-head"></div>
-								<h5>Some informations<br>about them</h5>
-								<span> </span>
-								<span class="sub"> </span>
-							</div>
-						</div>
-						
-						<div class="col-md-3 col-sm-6 text-center">
-							<div class="feature feature-icon-large">
-								<i class="icon icon-mic"></i>
-								<div class="pin-body"></div>
-								<div class="pin-head"></div>
-								<h5>Donate to the artist</h5>
-								<span> </span>
-								<span class="sub"> </span>
-							</div>
-						</div>
-					
-		
+
+			<div class="row">
+				<div class="col-md-3 col-sm-6 text-center">
+					<div class="feature feature-icon-large">
+						<i class="icon icon-upload"></i>
+						<div class="pin-body"></div>
+						<div class="pin-head"></div>
+						<h5>Upload and Share <br>your Music</h5>
+						<span> </span>
+						<span class="sub"> </span>
 					</div>
 				</div>
-			
-			</section>
+				
+				<div class="col-md-3 col-sm-6 text-center">
+					<div class="feature feature-icon-large">
+						<i class="icon icon-adjustments"></i>
+						<div class="pin-body"></div>
+						<div class="pin-head"></div>
+						<h5>Listen Music of&nbsp;<br>every users</h5>
+						<span> </span>
+						<span class="sub"> </span>
+					</div>
+				</div>
+				
+				<div class="col-md-3 col-sm-6 text-center">
+					<div class="feature feature-icon-large">
+						<i class="icon icon-ribbon"></i>
+						<div class="pin-body"></div>
+						<div class="pin-head"></div>
+						<h5>Some informations<br>about them</h5>
+						<span> </span>
+						<span class="sub"> </span>
+					</div>
+				</div>
+				
+				<div class="col-md-3 col-sm-6 text-center">
+					<div class="feature feature-icon-large">
+						<i class="icon icon-mic"></i>
+						<div class="pin-body"></div>
+						<div class="pin-head"></div>
+						<h5>Donate to the artist</h5>
+						<span> </span>
+						<span class="sub"> </span>
+					</div>
+				</div>
+			</div>
 		</div>
-		
+	</section>
+</div>		
 		<div class="footer-container">
 		
 			<footer class="short bg-secondary-1">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
 						<div class="col-sm-10">
 							<span class="sub">© Copright Mamene 2016</span>

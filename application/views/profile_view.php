@@ -5,39 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Profile | KodingMadeSimple.com</title>
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>">
+	<link rel="stylesheet" href="<?php echo base_url("assets/css/profile_view.css"); ?>">
 </head>
 <body>
-<nav class="navbar navbar-default" role="navigation">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="<?php echo base_url(); ?>">KODING MADE SIMPLE</a>
-		</div>
-		<div class="collapse navbar-collapse" id="navbar1">
-			<ul class="nav navbar-nav navbar-right">
-				<?php if ($this->session->userdata('login')){ ?>
-				<li><p class="navbar-text">Hello <?php echo $this->session->userdata('uname'); ?></p></li>
-				<li><a href="<?php echo base_url(); ?>home/logout">Log Out</a></li>
-				<?php } else { ?>
-				<li><a href="<?php echo base_url(); ?>login">Login</a></li>
-				<li><a href="<?php echo base_url(); ?>signup">Signup</a></li>
-				<?php } ?>
-			</ul>
-		</div>
-	</div>
-</nav>
+<?php 
+include('application/views/menu.php');
+?>
 <div class="container">
 	<div class="row">
 		<div class="col-md-4">
 			<h4>Profile Summary</h4>
 			<hr/>
-			<p>Name: <?php echo $uname; ?></p>
-			<p>Email: <?php echo $uemail; ?></p>
+			<p>Name: <?php echo $this->session->userdata('uname'); ?></p>
+			<p>Email:<?php echo $this->session->userdata('uemail'); ?></p>
+			
 			<p>...</p>
 		</div>
 		<div class="col-md-8">

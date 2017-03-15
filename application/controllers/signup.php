@@ -4,7 +4,7 @@ class signup extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->helper(array('form','url'));
+		$this->load->helper(array('form','url',));
 		$this->load->library(array('session', 'form_validation'));
 		$this->load->database();
 		$this->load->model('user_model');
@@ -13,8 +13,10 @@ class signup extends CI_Controller
 	function index()
 	{
 		// set form validation rules
+				$this->form_validation->set_rules('UserName', 'User Name', 'trim|required|alpha|min_length[3]|max_length[30]|is_unique[user.UserName]');
+
 		$this->form_validation->set_rules('FirstName', 'First Name', 'trim|required|alpha|min_length[3]|max_length[30]');
-		$this->form_validation->set_rules('Name', 'Last Name', 'trim|required|alpha|min_length[3]|max_length[30]');
+		$this->form_validation->set_rules('LastName', 'Last Name', 'trim|required|alpha|min_length[3]|max_length[30]');
 		$this->form_validation->set_rules('Mail', 'Mail ID', 'trim|required|is_unique[user.Mail]');
 		$this->form_validation->set_rules('Password', 'Password', 'trim|required|matches[cPassword]');
 		$this->form_validation->set_rules('cPassword', 'Confirm Password', 'trim|required');
@@ -30,7 +32,7 @@ class signup extends CI_Controller
 			//insert user details into db
 			$data = array(
 				'FirstName' => $this->input->post('FirstName'),
-				'Name' => $this->input->post('Name'),
+				'LastName' => $this->input->post('LastName'),
 				'Mail' => $this->input->post('Mail'),
 				'Password' => $this->input->post('Password'),
 				'UserName' => $this->input->post('UserName'),

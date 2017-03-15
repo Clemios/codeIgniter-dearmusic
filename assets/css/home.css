@@ -3,7 +3,43 @@ body{
 	background-size: cover;
 	margin: 0;
 }
+.footer-container{
+	background-color: #7f0000!important;
+}
+.navbar-brand{
+	font-family: 'Shadows Into Light';
+	color: #ffffff!important;
+}
+.unlien{
+	color: white!important;
+	font-family:  'Shadows Into Light';
+	font-size: 22px;
+}
+.signuplogin{
+	font-family: 'Shadows Into Light';
+	font-size: 20px;
+}
 
-{
-	background: rgba(0,0,0,0);
+.duplicatable-content{
+	background-color: rgba(0,0,0,0.65)!important;
+	height: 732px;
+}
+
+.lead{
+	color: white;
+	font-family: 'Comic Sans MS';
+}
+
+.cochon{
+	color: white;
+	font-family: 'Comic Sans MS';
+}
+
+h5{
+	color: white;
+	font-family: 'Comic Sans MS'!important;
+}
+
+footer{
+	margin-top: 00px;
 }

@@ -3,8 +3,8 @@
 }
 
 .navbar-default{
-	background: rgba(50,50,50,1);
-	border-color: #f77e5a;
+	background: #364b57;
+	border-color: #7f0000;
 	color:white;
-
+	margin-bottom: 0px;
 }
