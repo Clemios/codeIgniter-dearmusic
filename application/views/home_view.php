@@ -14,7 +14,6 @@
         <link href="<?= constant('ASSETS') ?>css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="<?= constant('ASSETS') ?>css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="<?= constant('ASSETS') ?>css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="<?= constant('ASSETS') ?>css/theme-cobalt.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="<?= constant('ASSETS') ?>css/custom.css" rel="stylesheet" type="text/css" media="all"/>
         <!--[if gte IE 9]>
         	<link rel="stylesheet" type="text/css" href="css/ie9.css" />

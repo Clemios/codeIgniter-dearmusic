@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>">
 </head>
 <body>
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-custom">
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">

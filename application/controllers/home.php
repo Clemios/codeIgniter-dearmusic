@@ -12,6 +12,10 @@ class home extends CI_Controller
 	{
 		$this->load->view('home_view');
 	}
+
+	function search(){
+		$this->load->view('search_view');
+	}
 	
 	function logout()
 	{
