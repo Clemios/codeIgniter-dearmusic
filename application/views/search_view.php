@@ -44,39 +44,36 @@
 					<a href="#" style="color: grey">Acceuil</a>
 					<a href="#" style="color: grey">Tendances</a>
 					<a href="#" style="color: grey">Catégories</a>
+					<div class="col-md-4 pull-right">
+					<form id="search" method="post" action="<?php echo site_url('search/');?>">
+						<input name="searchinput" type="text" placeholder="Rechercher">
+					</form>
+					</div>
 				</h1>
 			</div>
 		</div>
 	</nav>
-	
- <!--Navbar DearMusic - Sign In - Sign Up 
-	<nav class="navbar navbar-inverse navbar-1" role="navigation">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a href="http://dearmusic.com" class="navbar-left" style="margin-top: 5px;">
-					<img src="http://www.my-art.com/sites/default/files/styles/watermark/public/Gib%C3%A9/139ef807dc70211d11743be15d3113cc1792ef09_1334319171_crop_1x1.jpg?itok=XdaJUx7_" alt="murene" class="img-circle" style="max-width: 40px; height: auto;">
-				</a>
-				<a class="navbar-brand" style="margin-left: 1px;" href="#">DearMusic</a>
-			</div>
-			<ul class="nav navbar-nav navbar-right">
-      			<li><a href="#">Connexion</a></li>
-    		</ul>
+	<h1>Résultat de la recherche pour : <?php echo $search; ?></h1>
+	<div class="row">
+		<div class="col-md-3">
+			<h2>Musiques</h2>
+			<?php foreach($results_music as $key => $result_m): ?>
+				<?php echo $result_m['Title']; ?><br />
+			<?php endforeach; ?>
 		</div>
-	</nav>-->
-
- <!--Navbar Menus 
-	<nav class="navbar navbar-inverse navbar-2">
-		<div class="container-fluid">
-			<ul class="nav navbar-nav">
-				<li><a href="#"></a></li>
-				<li><a href="#">Acceuil</a></li>
-				<li><a href="#">Tendances</a></li>
-				<li><a href="#">Genres</a></li>
-			</ul>
-			<form class="navbar-form navbar-left" role="search">
-  				<div class="form-group">
-					<input type="text" class="search-area" placeholder="Search">
-				</div> -->
+		<div class="col-md-3">
+			<h2>Albums</h2>
+			<?php foreach($results_album as $key => $result_a): ?>
+				<?php echo $result_a['Title']; ?><br />
+			<?php endforeach; ?>
+		</div>
+		<div class="col-md-3">
+			<h2>Artiste</h2>
+			<?php foreach($results_artist as $key => $result_ar): ?>
+				<?php echo $result_ar['Complete_name']; ?><br />
+			<?php endforeach; ?>
+		</div>
+	</div>
 
 		<script src="<?= constant('ASSETS') ?>js/jquery.min.js"></script>
         <script src="<?= constant('ASSETS') ?>js/jquery.plugin.min.js"></script>
@@ -99,7 +96,6 @@
 (function($){
     $(document).ready(function(){
 		var offset = $(".navbar-2").offset().top;
-		console.log(offset);
 
         $(document).scroll(function(){
             var scrollTop = $(document).scrollTop();
